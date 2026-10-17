@@ -26,18 +26,16 @@
 <main>
 <section class="contact">
   <h1>Contact</h1>
-  <p>Publishing inquiries: <a href="https://www.andreabrownlit.com/Team/Paige-Terlip" target="_blank" rel="noopener">Paige Terlip</a> at <a href="https://www.starlingliterary.com/" target="_blank" rel="noopener">Starling Literary + Media</a></p>
-  <!-- Replace YOUR_FORM_ID with a Formspree (formspree.io) form ID so submissions are emailed to you. -->
-  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-    <div class="row">
-      <label>First Name<input name="first_name" required></label>
-      <label>Last Name<input name="last_name"></label>
-    </div>
-    <label>Email<input type="email" name="email" required></label>
-    <label>Phone<input type="tel" name="phone"></label>
-    <label>Message<textarea name="message" rows="6" placeholder="Type your message here..." required></textarea></label>
-    <button class="button" type="submit">Submit</button>
-  </form>
+  <p>Publishing inquiries: <a href="https://www.paigeterlip.com/" target="_blank" rel="noopener">Paige Terlip</a> at <a href="https://www.starlingliterary.com/" target="_blank" rel="noopener">Starling Literary + Media</a></p>
+  <p>Email: <span id="email"><noscript>info [at] steffhiggins [dot] com</noscript></span></p>
+  <script>
+    (function(){
+      var p=['info','steffhiggins','com'],a=p[0]+'@'+p[1]+'.'+p[2],
+          l=document.createElement('a');
+      l.href='mailto:'+a;l.textContent=a;
+      document.getElementById('email').appendChild(l);
+    })();
+  </script>
 </section></main>
 <footer class="site-footer">
   <div class="social">
