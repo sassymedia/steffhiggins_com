@@ -1,0 +1,38 @@
+:root{--ink:#2c2935;--muted:#635d53;--accent:#852a0c;--paper:#f2f1f0;--line:#c8c9c5}
+*{box-sizing:border-box}
+body{margin:0;font:300 1.05rem/1.75 'Lato',Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;display:flex;flex-direction:column;min-height:100vh}
+main{flex:1}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--accent)}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.6rem,6vw,4rem)}
+h2{font-size:clamp(1.8rem,4vw,2.4rem)}
+.site-header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;padding:1.25rem clamp(1rem,5vw,4rem);border-bottom:1px solid var(--line)}
+.brand{font-family:'Cormorant Garamond',serif;font-size:1.8rem;text-decoration:none;color:var(--ink)}
+nav a{margin-left:1.75rem;text-decoration:none;color:var(--ink);letter-spacing:.12em;font-size:.9rem;padding-bottom:3px}
+nav a:hover,nav a[aria-current]{border-bottom:2px solid var(--accent)}
+.hero,.feature,.about,.film,.contact{max-width:1100px;margin:0 auto;padding:3rem clamp(1rem,5vw,2rem)}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center}
+.hero h2{color:var(--muted);font-weight:400}
+figcaption{font-size:.8rem;color:var(--muted);margin-top:.4rem}
+figure{margin:0}
+.feature{display:grid;grid-template-columns:1fr 1.3fr;gap:3rem;align-items:center;border-top:1px solid var(--line)}
+.eyebrow{font-family:'Lato',sans-serif;font-weight:400;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+.button{display:inline-block;background:var(--accent);color:#fff;border:0;padding:.7rem 1.8rem;text-decoration:none;font:400 .95rem 'Lato',sans-serif;letter-spacing:.08em;cursor:pointer}
+.button:hover{background:#aa3d1d}
+.two-col{display:grid;grid-template-columns:320px 1fr;gap:3rem;align-items:start}
+.film{max-width:800px}
+.film .banner{margin-bottom:2rem}
+blockquote{margin:2rem 0;padding:1rem 1.5rem;border-left:3px solid var(--accent);background:var(--paper);font-style:italic}
+blockquote footer{font-style:normal;color:var(--muted)}
+.contact{max-width:640px}
+form{display:grid;gap:1rem;margin-top:2rem}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+label{display:grid;gap:.25rem;font-size:.9rem}
+input,textarea{font:inherit;padding:.6rem;border:1px solid var(--line);background:#fff;width:100%}
+form .button{justify-self:start}
+.site-footer{text-align:center;padding:2rem 1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted)}
+.social{display:flex;justify-content:center;gap:.75rem}
+.social img{width:32px;height:32px;opacity:.8}
+.social a:hover img{opacity:1}
+@media(max-width:760px){.hero,.feature,.two-col{grid-template-columns:1fr}.hero figure{order:-1}.site-header{justify-content:center}nav a{margin:0 .8rem}.row{grid-template-columns:1fr}.about figure{max-width:320px}}
