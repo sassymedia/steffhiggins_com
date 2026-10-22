@@ -1,3 +1,6 @@
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 600;font-display:swap;src:url(fonts/cormorant-garamond-latin.woff2) format('woff2')}
+@font-face{font-family:'Lato';font-style:normal;font-weight:300;font-display:swap;src:url(fonts/lato-300-latin.woff2) format('woff2')}
+@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/lato-400-latin.woff2) format('woff2')}
 :root{--ink:#2c2935;--muted:#635d53;--accent:#852a0c;--paper:#f2f1f0;--line:#c8c9c5}
 *{box-sizing:border-box}
 body{margin:0;font:300 1.05rem/1.75 'Lato',Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;display:flex;flex-direction:column;min-height:100vh}
