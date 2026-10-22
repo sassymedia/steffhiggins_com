@@ -17,7 +17,8 @@ nav a:hover,nav a[aria-current]{border-bottom:2px solid var(--accent)}
 figcaption{font-size:.8rem;color:var(--muted);margin-top:.4rem}
 figure{margin:0}
 .feature{display:grid;grid-template-columns:1fr 1.3fr;gap:3rem;align-items:center;border-top:1px solid var(--line)}
-.eyebrow{font-family:'Lato',sans-serif;font-weight:400;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+.eyebrow{margin:0 0 .5em;line-height:1.15;font-family:'Lato',sans-serif;font-weight:400;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+.about h2{font-size:1.17em}
 .button{display:inline-block;background:var(--accent);color:#fff;border:0;padding:.7rem 1.8rem;text-decoration:none;font:400 .95rem 'Lato',sans-serif;letter-spacing:.08em;cursor:pointer}
 .button:hover{background:#aa3d1d}
 .two-col{display:grid;grid-template-columns:320px 1fr;gap:3rem;align-items:start}
