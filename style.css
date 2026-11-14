@@ -40,3 +40,4 @@ form .button{justify-self:start}
 .social img{width:32px;height:32px;opacity:.8}
 .social a:hover img{opacity:1}
 @media(max-width:760px){.hero,.feature,.two-col{grid-template-columns:1fr}.hero figure{order:-1}.site-header{justify-content:center}nav a{margin:0 .8rem}.row{grid-template-columns:1fr}.about figure{max-width:320px}}
+.coming{max-width:420px;margin:1.5rem auto 0}.coming img{width:100%;height:auto;display:block}
